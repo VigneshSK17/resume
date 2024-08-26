@@ -1,0 +1,101 @@
+VIGNESH SURESH KUMAR
+470-217-1987 | Atlanta, GA | vignesh.sureshkumar@gatech.edu | github.com/vigneshsk17 | linkedin.com/in/vigneshsk1
+
+Education
+
+-   -------------------------------------------------------- -------------------
+      Georgia Institute of Technology                            Expected May 2026
+      B.S. in Computer Science, Minor in Business Leadership           Atlanta, GA
+      -------------------------------------------------------- -------------------
+
+      --------------------------------------------------------------------------------------- --
+      Courses: Data Structures and Algorithms, Java OOP, Systems Programming, Object Design   
+      Awards: ADP Henry Taub Scholarship | GPA: 3.92/4.0                                      
+      --------------------------------------------------------------------------------------- --
+
+Experience
+
+-   ----------------------------- ---------------------
+      Meta & Major League Hacking     June 2024 - Present
+      Production Engineer Fellow    
+      ----------------------------- ---------------------
+
+    -    Engaged in a 12-week program featuring guidance from Meta engineers, hands-on training, and talks on software development
+
+    -    Secured admission into highly competitive mentorship program, placing in the top 2% of applicants
+
+    -    Collaborated with 10+ interns to craft a robust portfolio website utilizing technologies such as MySQL and NGINX
+
+-   --------------------------- --------------------------
+      Fung Group - Georgia Tech     September 2023 - Present
+      Undergraduate Researcher                   Atlanta, GA
+      --------------------------- --------------------------
+
+    -    Implemented a custom variant of the SZ3 framework to compress molecular data by 50x while preserving key properties
+
+    -    Developing a Graph Neural Network for <1 second compression of volumetric data while reducing dimensionality
+
+    -    Automating aggregation of statistics from 5 compression algorithms to uncover impacts on charge density
+
+-   ------------------------ -----------------------
+      Automotive LIDAR - VIP     August 2023 - Present
+      Software Subteam Lead                Atlanta, GA
+      ------------------------ -----------------------
+
+    -    Led team of 4 interns in an initiative to migrate from ROS to ROS2, including rewrites of custom dependencies
+
+    -    Presented technical proposal regarding the migration to lead engineers and gained widespread approval
+
+    -    Utilized native multithreaded support in ROS2 to 4x path planning computations with LIDAR laser scanner
+
+-   -------------------------- -----------------------
+      System Technology Works         January - May 2023
+      Software Engineer Intern     Peachtree Corners, GA
+      -------------------------- -----------------------
+
+    -    Designed 10+ movements for humanoid robot Zeus2Q, including algorithms for bipedal walking and grabbing
+
+    -    Integrated the NVIDIA Riva SDK to enable real-time conversational AI utilizing leading LLMs and RAG
+
+    -    Prepared technical documentation videos for Zeus2Q’s Python API, allowing for interfacing by customers
+
+Projects
+
+-   ------------------------------------------------------------------------------------------------------ --
+      GT Reserve | AWS, GraphQL, Python, SQL, Puppeteer, Typescript, Prisma, React | gt-reserve.vercel.app   
+      ------------------------------------------------------------------------------------------------------ --
+
+    -    Developed a scheduling site to allow Georgia Tech students to filter between bookings on 30+ rooms
+
+    -    Hosted AWS Lambda functions to automate scraping of data by Puppeteer into SQLite database and S3 buckets
+
+    -    Created a GraphQL API to allow the frontend to query booking data from generated database with Prisma ORM
+
+    -    Designed a clean and responsive React page that displays bookings with advanced filtering and sorting
+
+-   ---------------------------------------------------------------------------------- --
+      CLI Shortener | Rust, AWS DynamoDB, NGINX, Docker, Axum, GitHub Actions | GitHub   
+      ---------------------------------------------------------------------------------- --
+
+    -    Engineered a Rust-based link shortener that can create 500+ million shortcuts both on the internet and locally
+
+    -    Employed DynamoDB to ensure highly efficient storage and retrieval of shortened links in a NoSQL format
+
+    -    Utilized Docker and NGINX to provide secure HTTPS internet access, with CI/CD from GitHub Actions
+
+-   ---------------------------------------------------------- --
+      Unwrappd | Android, Firebase, Java, Spotify API | GitHub   
+      ---------------------------------------------------------- --
+
+    -    Led a team of 5 in developing an Android app for Spotify users to generate and save Spotify statistics year-round
+
+    -    Pulled statistics and music samples from Spotify API and Firebase to facilitate back-end user auth and cloud storage
+
+    -    Utilized Scrum, an Agile methodology, to organize meetings & delegate tasks effectively within weekly sprints
+
+Skills
+
+Languages: Java, Python, C, C++, Go, Rust, SQL, JavaScript, Typescript, Bash, F#
+Technologies: Docker, AWS, Git, GitHub, Firebase, Selenium, Android, React, MySQL, SQLite, Robot Operating System
+Concepts: Data Structures and Algorithms, Web/Mobile App Design, Cloud Computing, Machine Learning, Robotics
+Soft Skills: Communicator, Agile, Detail-oriented, Collaborative, Leadership, Quick Learner

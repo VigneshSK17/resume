@@ -1,0 +1,300 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%% TODO %%%%%
+
+% Mention skills more in experience bullet points
+
+%%%%%
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{%
+\vspace{-1pt}%
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+
+    \end{tabular*}%
+  \vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Vignesh Suresh Kumar} \\ \vspace{1pt}
+    \small 470-217-1987 $|$ \small Atlanta, GA $|$
+    \href{mailto:vignesh.sureshkumar@gatech.edu}{\underline{vignesh.sureshkumar@gatech.edu}} $|$
+    \href{https://github.com/VigneshSK17}{\underline{github.com/vigneshsk17}} $|$
+    \href{https://www.linkedin.com/in/vigneshsk1}{\underline{linkedin.com/in/vigneshsk1}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Expected May 2026}
+			{B.S. in Computer Science, Minor in Business Leadership}{Atlanta, GA}
+
+			\medskip
+
+			\small
+			\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+			\textit{Courses:} Data Structures and Algorithms, Java OOP, Systems Programming, Object Design \\
+			\textit{Awards:} ADP Henry Taub Scholarship $|$ \textit{GPA}: 3.92/4.0 \\
+			\end{tabular*}\vspace{-7pt}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+	\resumeSubHeadingListStart
+
+			%% Software Engineering %%
+
+			% TODO: Update bullet points
+			\resumeSubheading
+			{Meta \& Major League Hacking}{June 2024 - Present}
+			{Production Engineer Fellow}{}
+			\resumeItemListStart
+				\resumeItem{Engaged in a 12-week program featuring guidance from Meta engineers, hands-on training, and talks on software development}
+				\resumeItem{Secured admission into highly competitive mentorship program, placing in the top 2\% of applicants}
+				\resumeItem{Collaborated with 10+ interns to craft a robust portfolio website utilizing technologies such as MySQL and NGINX }
+			\resumeItemListEnd
+
+			\resumeSubheading
+			{Fung Group - Georgia Tech}{September 2023 - Present}
+			{Undergraduate Researcher}{Atlanta, GA}
+			\resumeItemListStart
+				\resumeItem{Implemented a custom variant of the SZ3 framework to compress molecular data by 50x while preserving key properties}
+				\resumeItem{Developing a Graph Neural Network for \textless 1 second compression of volumetric data while reducing dimensionality}
+				\resumeItem{Automating aggregation of statistics from 5 compression algorithms to analyze impacts on charge density}
+			\resumeItemListEnd
+
+			\resumeSubheading
+			{Automotive LIDAR - VIP}{August 2023 - Present}
+			{Software Subteam Lead}{Atlanta, GA}
+			\resumeItemListStart
+				\resumeItem{Led team of 4 interns in migrating software from ROS to ROS2, including rewrites of custom dependencies}
+				\resumeItem{Presented technical proposal regarding migration to lead engineers and gained widespread approval}
+				\resumeItem{Utilized native multithreaded support in ROS2 to 4x path planning computations with LIDAR laser scanner}
+			\resumeItemListEnd
+
+			\resumeSubheading
+			{System Technology Works}{January - May 2023}
+			{Software Engineer Intern}{Peachtree Corners, GA}
+			\resumeItemListStart
+				\resumeItem{Designed 10+ movements for humanoid robot Zeus2Q, including algorithms for bipedal walking and grabbing}
+				\resumeItem{Integrated the NVIDIA Riva SDK to enable real-time conversational AI utilizing leading LLMs and RAG}
+				\resumeItem{Prepared technical documentation videos for Zeus2Q's Python API, allowing for interfacing by customers}
+			\resumeItemListEnd
+
+			%% SRE %%
+			\begin{comment}
+			\resumeSubheading
+			{Meta \& Major League Hacking}{June 2024 - Present}
+			{Production Engineer Intern}{}
+			\resumeItemListStart
+				\resumeItem{Developing real-world projects utilizing relevant SRE skills with mentorship from Meta engineers}
+				\resumeItem{Enrolled in a 12-week hands-on curriculum covering key DevOps concepts, augmented by events led by industry experts}
+				\resumeItem{Working with 10+ interns to create a thoroughly developed portfolio utilizing industry best practices and services}
+			\resumeItemListEnd
+			\end{comment}
+
+
+			%% High School %%
+
+			\begin{comment}
+      \resumeSubheading
+      %% Use Numbers!! %
+      {Horror Hacks}{May 2022 - Oct 2023}
+      {Co-founder and Lead Organizer}{}
+      \resumeItemListStart
+        \resumeItem{Developed the event's official website from scratch, utilizing HTML/CSS, Javascript, and Astro to craft an accessible and responsive site}
+        % \resumeItem{Organized and led workshops in multiple programming languages and frameworks, fostering skill development}
+        \resumeItem{Reached 70+ high schoolers from various nationalities through utilization of social media and marketing}
+        % \resumeItem{Coordinate a team of volunteers, assigning roles, and delegating tasks to ensure efficient event execution and outstanding participant support}
+      \resumeItemListEnd
+			\end{comment}
+
+			\begin{comment}
+      \resumeSubheading
+      {Club President and FRC Programming Captain}{Aug 2019 - May 2023}
+      {Alpharetta Robotics Club}{}
+      \resumeItemListStart
+        \resumeItem{Led the organization structure and managed club funding for 100+ members}
+        \resumeItem{Served as a key programming and soft skills mentor for all of the club's robotics}
+        % \resumeItem{Coordinated multiple outreach events to promote STEM initiatives to our community}
+        \resumeItem{Innovated on Java codebase throughout the competitive season while introducing team members to the codebase}
+        \resumeItem{Integrated depth-sensing camera to allow for vision-backed autonomous movements}
+      \resumeItemListEnd
+			\end{comment}
+
+	\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+		\resumeProjectHeading
+		{\textbf{GT Reserve} $|$ \textit{AWS, GraphQL, Python, SQL, Puppeteer, Typescript, Prisma, React} $|$ \href{https://gt-reserve.vercel.app}{\underline{gt-reserve.vercel.app}}}{}
+			\resumeItemListStart
+				\resumeItem{Developed a scheduling site to allow Georgia Tech students to filter between bookings on 30+ rooms}
+				\resumeItem{Hosted AWS Lambda functions to automate scraping of data by Puppeteer into SQLite database and S3 buckets}
+				\resumeItem{Created a GraphQL API to allow the frontend to query booking data from generated database with Prisma ORM}
+				\resumeItem{Designed a clean and responsive React page that displays bookings with advanced filtering and sorting}
+			\resumeItemListEnd
+
+      \resumeProjectHeading
+		{\textbf{CLI Shortener} $|$ \emph{Rust, AWS DynamoDB, NGINX, Docker, Axum, GitHub Actions} $|$ \href{https://github.com/VigneshSK17/cli_shoretener.git}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a Rust-based link shortener that can create 500+ million shortcuts both on the internet and locally}
+            \resumeItem{Employed DynamoDB to ensure highly efficient storage and retrieval of shortened links in a NoSQL format}
+            \resumeItem{Utilized Docker and NGINX to provide secure HTTPS internet access, with CI/CD from GitHub Actions}
+          \resumeItemListEnd
+
+			\resumeProjectHeading
+			{\textbf{Unwrappd} $|$ \textit{Android, Firebase, Java, Spotify API} $|$ \href{https://github.com/vigneshsk17/cubimer}{\underline{GitHub}}}{}
+				\resumeItemListStart
+					\resumeItem{Led a team of 5 in developing an Android app for Spotify users to generate and save Spotify statistics year-round}
+					\resumeItem{Pulled statistics and music samples from Spotify API and Firebase to facilitate back-end user auth and cloud storage}
+					\resumeItem{Utilized Scrum, an Agile methodology, to organize meetings \& delegate tasks effectively within weekly sprints}
+				\resumeItemListEnd
+
+
+			\begin{comment}
+      \resumeProjectHeading
+        {\textbf{Cubimer} $|$ \emph{Dart, Flutter, Local Storage, Cloudflare, Git} $|$ \href{https://cubimer.pages.dev}{\underline{cubimer.pages.dev}}}{Jun 2023 - Aug 2023}
+        \resumeItemListStart
+          \resumeItem{Produced a multi-platform cubing timer app using Flutter, utilizing each platform's state management solution}
+          % \resumeItem{Applied Github Actions to test builds on various platforms, including MacOS, Windows, and Web}
+          \resumeItem{Hosted the web version of the app on Cloudflare Pages to ensure fast loading times and reliable access worldwide}
+          \resumeItem{Crafted an elegant and effective layout utilizing the Material Design philosophy and responsive layouts}
+        \resumeItemListEnd
+			\end{comment}
+
+			\begin{comment}
+      \resumeProjectHeading
+          {\textbf{FTC Stats CSV} $|$ \emph{F\#, Web scraping, HTML/CSS, Git}}{Aug 2022 - Sep 2022}
+          \resumeItemListStart
+            \resumeItem{Architected a command-line tool in F\# to automate web data extraction from ftcstats.org}
+            \resumeItem{Incorporated F\#'s powerful web scraping and data manipulation libraries to easily and effortlessly convert HTML table data to usable CSVs}
+            % \resumeItem{Incorporated the Argu library to allow for users to customize CSV data based on teams, season, dates, and regions}
+          \resumeItemListEnd
+			\end{comment}
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, C++, Go, Rust, SQL, JavaScript, Typescript, Bash, F\#} \\
+     \textbf{Technologies}{: Docker, AWS, Git, GitHub, Firebase, Selenium, Android, React, MySQL, SQLite, Robot Operating System} \\
+		 \textbf{Concepts}{: Data Structures and Algorithms, Web/Mobile App Design, Cloud Computing, Machine Learning, Robotics}\\
+     \textbf{Soft Skills}{: Communicator, Agile, Detail-oriented, Collaborative, Leadership, Quick Learner} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
