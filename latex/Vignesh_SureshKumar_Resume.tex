@@ -11,7 +11,7 @@
 
 %%%%%
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -82,7 +82,7 @@
       \textit{\small#3} & \textit{\small #4} \\
 
     \end{tabular*}%
-  \vspace{-9pt}
+  \vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -134,12 +134,12 @@
       {Georgia Institute of Technology}{Expected May 2026}
 			{B.S. in Computer Science, Minor in Business Leadership}{Atlanta, GA}
 
-			\medskip
+			\smallskip
 
 			\small
 			\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-			\textit{Courses:} Data Structures and Algorithms, Java OOP, Systems Programming, Object Design \\
-			\textit{Awards:} ADP Henry Taub Scholarship $|$ \textit{GPA}: 3.92/4.0 \\
+			\textit{Courses:} Data Structures and Algorithms, Java OOP, Operating Systems, Object Design \\
+			\textit{Awards:} ADP Henry Taub Scholarship $|$ \textit{GPA}: 3.94/4.0 \\
 			\end{tabular*}\vspace{-7pt}
 
   \resumeSubHeadingListEnd
@@ -151,12 +151,24 @@
 			%% Software Engineering %%
 			\resumeSubheading
 			{Meta \& Major League Hacking}{June - September 2024}
-			{Production Engineer Fellow}{}
+			{Production Engineer Fellow}{Remote}
 			\resumeItemListStart
-				\resumeItem{Engaged in 12-week program featuring guidance from Meta engineers, hands-on training, and talks on software development}
+				\resumeItem{Engaged in 12-week program featuring guidance from Meta engineers, hands-on training, and software talks}
 				\resumeItem{Secured admission into highly competitive mentorship program, placing in the top 2\% of applicants}
-				\resumeItem{Collaborated with 10+ interns to craft a robust Virtual Private Server utilizing MySQL, NGINX, Docker, Flask, etc}
+				\resumeItem{Developed and deployed an internal networking template for engineers utilizing a VPS, MySQL, NGINX, Docker, and Flask}
+				% \resumeItem{Collaborated with 10+ interns to craft a robust Virtual Private Server utilizing MySQL, NGINX, Docker, Flask, etc}
 			\resumeItemListEnd
+
+			% \begin{comment}
+			\resumeSubheading
+			{Compliant Labs}{September 2024 - Present}
+			{Technology Consultant}{Remote}
+			\resumeItemListStart
+				\resumeItem{Responsible for analyzing working processes of 150+ documentary trade companies; determining points of weakness}
+				\resumeItem{Conducted market research on AI-based document segmentation models to save clients up to \$500k a year.}
+				% \resumeItem{Conducting market research on PDF segmentation models for discovering errors in Letter of Credit documents costing clients up to \$500k a year.}
+			\resumeItemListEnd
+			% \end{comment}
 
 			%% SRE / PE %%
 			% \resumeSubheading
@@ -170,7 +182,7 @@
 
 			\resumeSubheading
 			{Fung Group - Georgia Tech}{September 2023 - Present}
-			{Undergraduate Researcher}{Atlanta, GA}
+			{ML Researcher - Undergraduate}{Atlanta, GA}
 			\resumeItemListStart
 				\resumeItem{Designed a custom version of the SZ3 framework to compress terabytes of molecular charge data by 100x}
 				\resumeItem{Developing a Graph Neural Network for \textless 1 second compression of volumetric data while reducing dimensionality}
@@ -179,13 +191,14 @@
 
 			\resumeSubheading
 			{Automotive LIDAR - VIP}{August 2023 - Present}
-			{Software Subteam Lead}{Atlanta, GA}
+			{Software Engineer - Software Lead}{Atlanta, GA}
 			\resumeItemListStart
-				\resumeItem{Led team of 4 interns in migrating software from ROS to ROS2, including rewrites of custom dependencies}
-				\resumeItem{Presented technical proposal regarding migration to lead engineers and gained widespread approval}
 				\resumeItem{Utilized native multithreaded support in ROS2 to 4x path planning computations with LIDAR laser scanner}
+				\resumeItem{Led multiple developer in streamlining migration of foundational software for Project Sprite from ROS to ROS2}
+				\resumeItem{Crafted unit and integration testing (90\% code coverage) using Python and C++ for obstacle detection algorithms}
 			\resumeItemListEnd
 
+			% \begin{comment}
 			\resumeSubheading
 			{System Technology Works}{January - May 2023}
 			{Software Engineer Intern}{Peachtree Corners, GA}
@@ -194,6 +207,8 @@
 				\resumeItem{Integrated the NVIDIA Riva SDK to enable real-time conversational AI utilizing leading LLMs and RAG}
 				\resumeItem{Prepared technical documentation videos for Zeus2Q's Python API, allowing for interfacing by customers}
 			\resumeItemListEnd
+			% \end{comment}
+
 
 
 			%% High School %%
@@ -204,10 +219,10 @@
       {Horror Hacks}{May 2022 - Oct 2023}
       {Co-founder and Lead Organizer}{}
       \resumeItemListStart
-        \resumeItem{Developed the event's official website from scratch, utilizing HTML/CSS, Javascript, and Astro to craft an accessible and responsive site}
-        % \resumeItem{Organized and led workshops in multiple programming languages and frameworks, fostering skill development}
+        % \resumeItem{Developed the event's official website from scratch, utilizing HTML/CSS, Javascript, and Astro to craft an accessible and responsive site}
+        \resumeItem{Organized and led workshops in multiple programming languages and frameworks, fostering skill development}
         \resumeItem{Reached 70+ high schoolers from various nationalities through utilization of social media and marketing}
-        % \resumeItem{Coordinate a team of volunteers, assigning roles, and delegating tasks to ensure efficient event execution and outstanding participant support}
+        \resumeItem{Coordinate a team of volunteers, assigning roles, and delegating tasks to ensure efficient event execution and outstanding participant support}
       \resumeItemListEnd
 			\end{comment}
 
@@ -230,15 +245,27 @@
 \section{Projects}
     \resumeSubHeadingListStart
 
+		% \begin{comment}
 		\resumeProjectHeading
-		{\textbf{GT Reserve} $|$ \textit{AWS, GraphQL, Python, SQL, Puppeteer, Typescript, Prisma, React} $|$ \href{https://gt-reserve.vercel.app}{\underline{gt-reserve.vercel.app}}}{}
+		{\textbf{GT Reserve} $|$ \textit{AWS, GraphQL, Python, SQL, Puppeteer, Typescript, Prisma, React} $|$ \href{https://gt-reserve.netlify.app}{\underline{gt-reserve.netlify.app}}}{}
 			\resumeItemListStart
-				\resumeItem{Developed a scheduling site to allow Georgia Tech students to filter between bookings on 30+ rooms}
+				\resumeItem{Developed a responsive scheduling site to allow Georgia Tech students to filter between bookings on 30+ rooms}
 				\resumeItem{Hosted AWS Lambda functions to automate scraping of data by Puppeteer into SQLite database and S3 buckets}
 				\resumeItem{Created a GraphQL API to allow the frontend to query booking data from generated database with Prisma ORM}
-				\resumeItem{Designed a clean and responsive React page that displays bookings with advanced filtering and sorting}
+				% \resumeItem{Designed a clean and responsive React page that displays bookings with advanced filtering and sorting}
 			\resumeItemListEnd
+		% \end{comment}
 
+		% \begin{comment}
+		\resumeProjectHeading
+		{\textbf{Nomad} $|$ \textit{Swift, SwiftUI, XCode, iOS, OpenAI, MapKit, Mapbox, Firebase}}{}
+		\resumeItemListStart
+			\resumeItem{Implementing lossy route storage algorithms to reducing route size by 50\%+ for routes over 1000 coordinates}
+			\resumeItem{Enhanced app functionality by integrating Mapbox iOS SDK with MapKit, improving routing precision and user direction metadata}
+		\resumeItemListEnd
+		% \end{comment}
+
+		% \begin{comment}
       \resumeProjectHeading
 		{\textbf{CLI Shortener} $|$ \emph{Rust, AWS DynamoDB, NGINX, Docker, Axum, GitHub Actions} $|$ \href{https://github.com/VigneshSK17/cli_shoretener.git}{\underline{GitHub}}}{}
           \resumeItemListStart
@@ -246,14 +273,18 @@
             \resumeItem{Employed DynamoDB to ensure highly efficient storage and retrieval of shortened links in a NoSQL format}
             \resumeItem{Utilized Docker and NGINX to provide secure HTTPS internet access, with CI/CD from GitHub Actions}
           \resumeItemListEnd
+		% \end{comment}
 
-			\resumeProjectHeading
-			{\textbf{Unwrappd} $|$ \textit{Android, Firebase, Java, Spotify API} $|$ \href{https://github.com/vigneshsk17/cubimer}{\underline{GitHub}}}{}
-				\resumeItemListStart
-					\resumeItem{Led a team of 5 in developing an Android app for Spotify users to generate and save Spotify statistics year-round}
-					\resumeItem{Pulled statistics and music samples from Spotify API and Firebase to facilitate back-end user auth and cloud storage}
-					\resumeItem{Utilized Scrum, an Agile methodology, to organize meetings \& delegate tasks effectively within weekly sprints}
-				\resumeItemListEnd
+
+		\begin{comment}
+		\resumeProjectHeading
+		{\textbf{Unwrappd} $|$ \textit{Android, Firebase, Java, Kotlin, Spotify API} $|$ \href{https://github.com/vigneshsk17/cubimer}{\underline{GitHub}}}{}
+			\resumeItemListStart
+				\resumeItem{Led a team of 5 in developing an Android app for Spotify users to generate and save Spotify statistics year-round}
+				\resumeItem{Pulled statistics and music samples from Spotify API and Firebase to facilitate back-end user auth and cloud storage}
+				\resumeItem{Utilized Scrum, an Agile methodology, to organize meetings \& delegate tasks effectively within weekly sprints}
+			\resumeItemListEnd
+		\end{comment}
 
 
 			\begin{comment}
@@ -284,9 +315,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C, C++, Go, Rust, SQL, JavaScript, Typescript, Bash, F\#} \\
-     \textbf{Technologies}{: Docker, AWS, Git, GitHub, Firebase, Selenium, Android, React, MySQL, SQLite, Robot Operating System} \\
-		 \textbf{Concepts}{: Data Structures and Algorithms, Web/Mobile App Design, Cloud Computing, Machine Learning, Robotics}\\
+     \textbf{Languages}{: Java, Python, C, C++, Go, Rust, Kotlin, Swift, Dart, SQL, JavaScript, Typescript, Bash, F\#} \\
+     \textbf{Technologies}{: Docker, AWS, Git, GitHub, Firebase, Selenium, Android, SwiftUI, Jetpack Compose, React, Flutter, MySQL, SQLite, MongoDB, Robot Operating System} \\
+		 \textbf{Concepts}{: Concurrency, Deployment, Web/Mobile App Design, Cloud Computing, Machine Learning, Robotics}\\
      \textbf{Soft Skills}{: Communicator, Agile, Detail-oriented, Collaborative, Leadership, Quick Learner} \\
     }}
  \end{itemize}
